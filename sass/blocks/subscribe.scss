@@ -1,0 +1,97 @@
+.subscribe {
+  background-color: #999;
+  background-image: url("../../img/subscribe-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.subscribe__title {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 65px;
+}
+
+.subscribe__desc {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.subscribe__form {
+  width: 560px;
+}
+
+.subscribe__field {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 15px 20px;
+  width: 560px;
+  height: 60px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.subscribe__field--textarea {
+  height: 160px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.subscribe__newsletter {
+  display: flex;
+  justify-content: space-between;
+
+  .button {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.subscribe__label {
+  position: relative;
+  color: #fff;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.subscribe__label input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #999;
+  border-radius: 2px;
+}
+
+.subscribe__label input[type="checkbox"]:checked + .checkbox-indicator::after,
+.subscribe__label input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 1px;
+  background-color: #999;
+}
+
+.subscribe__label input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.subscribe__label input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.subscribe__label input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}

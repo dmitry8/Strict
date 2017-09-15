@@ -1,0 +1,53 @@
+.features .container {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.features__item {
+  position: relative;
+  flex-shrink: 0;
+  width: 320px;
+  margin-top: 170px;
+  margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -85px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.features__item--1::after {
+  background-image: url(../../img/phone-icon.svg);
+}
+
+.features__item--2::after {
+  background-image: url(../../img/airplane-icon.svg);
+}
+
+.features__item--3::after {
+  background-image: url(../../img/phone-icon.svg);
+}
+
+.features__item-title {
+  font-size: 22px;
+}
+
+.features__item-desc {
+  color: #999;
+}

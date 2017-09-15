@@ -1,0 +1,70 @@
+body {
+  min-width: 1140px;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 15px;
+  // line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 40px;
+  color: #2d3950;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 18px 35px;
+  font: inherit;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  border: 1px solid #15a4fa;
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: #15a4fa;
+  }
+
+  &.disabled,
+  &:disabled {
+    border: 1px solid #333;
+    background-color: #333;
+    opacity: 0.7;
+    cursor: default;
+  }
+}
