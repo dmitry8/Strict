@@ -8,3 +8,5 @@
 css/*.css
 node_modules/
 Thumbs.db
+start_pack/
+finish_pack/
