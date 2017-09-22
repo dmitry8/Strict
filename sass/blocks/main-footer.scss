@@ -9,40 +9,7 @@
   }
 }
 
-.main-footer__social {
-  ul {
-    display: flex;
-    width: 200px;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-  }
-}
-
-.main-footer__social-icon {
-  fill: #fff;
-}
-
 .main-footer__copyright {
   color: #999;
 }
 
-.main-footer__social-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #15a4fa;
-  border: 1px solid #15a4fa;
-  border-radius: 3px;
-
-  &:hover {
-    background-color: transparent;
-    border: 1px solid #999;
-  }
-
-  &:hover .main-footer__social-icon {
-    fill: #999;
-  }
-}
